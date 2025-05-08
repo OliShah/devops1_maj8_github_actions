@@ -16,4 +16,4 @@
       runs-on: ubuntu-latest
       steps:
         - name: python version
-          run: echo "Python version: $(python --version)"  
+          run: echo "Python version- $(python --version)"  
