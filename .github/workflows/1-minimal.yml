@@ -2,10 +2,18 @@
   
   on:
   # ska startas manuellt
-  
+  # "can be triggered manually, or at a defined schedule"
+  workflow_dispatch:
   jobs:
     print-info:
-      runs-on: # vilken runner?
+      runs-on: ubuntu-latest
       steps:
-        - name: # namnge steget
-          run: # vad som ska göras
+        - name: simple echo
+          run: echo "Detta är en minimal pipeline"  
+
+  jobs:
+    print-info:
+      runs-on: ubuntu-latest
+      steps:
+        - name: python version
+          run: echo "Python version: $(python --version)"  
