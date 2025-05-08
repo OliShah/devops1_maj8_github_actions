@@ -11,7 +11,6 @@
         - name: simple echo
           run: echo "Detta är en minimal pipeline"  
 
-  jobs:
     print-info:
       runs-on: ubuntu-latest
       steps:
